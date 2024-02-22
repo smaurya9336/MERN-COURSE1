@@ -1,0 +1,46 @@
+p+h3{
+    color: deeppink;
+}
+/* div> input{
+    background-color:purple ;
+ } */
+
+input[type="text"]{
+    color: red;
+}
+input[type="password"]{
+    color: green;
+}
+input[type]{
+    background-color: black;
+}
+div[id="myid"] p{
+    color: green;
+}
+button:hover{
+    background-color: black;
+    color: orange;
+    font-family: courier new;
+}
+p:hover{
+    display: none;
+}
+button:active{
+    background-color:blueviolet;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
