@@ -1,0 +1,58 @@
+div{
+    height: 200px;
+    width: 300px;
+    background-color: pink;
+    padding: 10px;
+    margin-bottom:25px;
+    letter-spacing: 1px;
+    /* border-style:solid ;
+    border-width: 5px; */
+    /* border: 5px solid black;
+    border-left-color: yellow; */
+    border: 5px solid black;
+    border-radius: 15px;
+    /* border-radius: 10px 100px / 120px ; */
+}
+button{
+    background-color: magenta;
+    color: white;
+    /* padding-left: 25px;
+    padding-right: 25px; */
+    /* padding: 5px; */
+    /* padding: 10px 25px; */
+    /* padding: 10px 20px 30px; */
+    /* padding: 10px 20px 10px 20px; */
+    
+    border-radius: 10px;
+    border: 2px solid black;
+
+    
+}
+button:hover{
+    background-color: blue;
+    color: white;
+    border-style: solid;
+    border-color: black;
+    border-radius: 16px;
+}
+h1{
+    /* border-width: 2px;
+    border-style: dashed;
+    border-color: green; */
+    border: 2px dashed green;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
