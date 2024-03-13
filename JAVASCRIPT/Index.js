@@ -8,8 +8,8 @@ let booleanIsLoogedIn = Boolean(isLoggedIn);
 let someNumber = 33;
 
 let stringNumber = String(someNumber);
-//console.log(stringNumber);
-//console.log(typeof stringNumber);
+console.log(stringNumber);
+console.log(typeof stringNumber);
 
 // *********************** Operations ************************
 
@@ -58,14 +58,14 @@ let repoCount = 70;
 
 const gameName = new String("sarita-Maurya");
 
-// console.log(gameName[0]);
-// console.log(gameName.__proto__);
-// console.log(gameName.length);
-// console.log(gameName.charAt(2));
-// console.log(gameName.toUpperCase());
-// console.log(gameName.indexOf("t"));
+console.log(gameName[0]);
+console.log(gameName.__proto__);
+console.log(gameName.length);
+console.log(gameName.charAt(2));
+console.log(gameName.toUpperCase());
+console.log(gameName.indexOf("t"));
 let newString = gameName.substring(0, 4);
-// console.log(newString);
+console.log(newString);
 
 const anotherString = gameName.slice(-12, 7);
 // console.log(anotherString);
