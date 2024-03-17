@@ -23,4 +23,5 @@ map.set("USA", "United State of America");
 map.set("Fr", "France");
 
 for (const key in map) {
+  console.log(key);
 }
