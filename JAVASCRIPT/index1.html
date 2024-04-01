@@ -4,16 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .red{
+            color: red;
+        }
+        .blue{
+            color: blue;
+        }
+        .box{
+            border: 1px solid  black;
+            background-color: pink;
+        }
+    </style>
 </head>
 <body>
-    <h1 class="green"></h1>
+   
 </body>
 <script>
-let heading=document.querySelector(".green")
-heading.style.backgroundColor="green"
-heading.innerHTML=`${heading.innerHTML="Apna College"}`
+
+let para1=document.createElement('p');
+para1.innerText="Hey I'm red";
+document.querySelector('body').append(para1)
 
 
+para1.classList.add('red');
+
+
+let h3=document.createElement('h3')
+h3.innerText="Hey I'm a blue"
+document.querySelector('body').append(h3)
+
+h3.classList.add('blue')
+
+let div=document.createElement('div')
+let h1=document.createElement('h1')
+let para2=document.createElement('p');
+
+h1.innerText="I'm in a div"
+para2.innerText="ME TOO"
+
+div.append(h1)
+div.append(para2)
+
+div.classList.add('box')
+document.querySelector('body').append(div)
 
 </script>
 </html>
