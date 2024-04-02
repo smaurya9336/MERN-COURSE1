@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+</head>
+<body>
+    <h1>Todo App</h1>
+    <input type="text" placeholder="enter your task">
+    <button>Add Task</button>
+    <ul>
+        <li>Eat <button class="delete">delete</button></li>
+        <li>Sleep <button class="delete">delete</button></li>
+    </ul>
+</body>
+
+<script>
+let btn=document.querySelector("button");
+let ul=document.querySelector("ul");
+let inp=document.querySelector("input");
+
+
+
+
+btn.addEventListener("click",function(){
+    let item=document.createElement("li");
+    item.innerText=inp.value;
+   
+    let delBtn=document.createElement("button");
+    delBtn.innerText="delete";
+    delBtn.classList.add("delete")
+
+
+
+    item.appendChild(delBtn);
+    ul.appendChild(item);
+    inp.value="";
+
+});
+
+ul.addEventListener("click",function(event){
+    if(event.target.nodeName="BUTTON"){
+       let listItem=event.target.parentElement;
+       listItem.remove();
+
+    }
+
+
+})
+
+
+
+// let delBtns=document.querySelectorAll(".delete");
+// for(delBtn of delBtns){
+//     delBtn.addEventListener("click",function(){
+//         let par=this.parentElement;
+//         par.remove();
+    
+// });
+
+// }
+
+
+
+</script>
+</html>
