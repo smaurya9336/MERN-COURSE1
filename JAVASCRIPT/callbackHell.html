@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Callback Hell</title>
+</head>
+<body>
+    <h1>Mern Stack Developers</h1>
+</body>
+<script>
+    // let h1=document.querySelector("h1");
+    // function changeColor(color, delay, nextColorChange){
+    //     setTimeout(()=>{
+    //         h1.style.color=color;
+    //         if(nextColorChange) nextColorChange();
+    //     },delay)
+    // }
+
+    // changeColor("red", 1000, () =>{
+    //     changeColor("orange", 1000, ()=>{
+    //         changeColor("green", 1000, ()=>{
+    //             changeColor("blue", 1000,)
+    //         })
+
+    //     })
+    // })
+
+
+    function savetoDb(data, success, failure){
+        let internetSpeed=Math.floor(Math.random() * 10)+1;
+        if(internetSpeed > 4){
+            success();
+        }else{
+            failure();
+        }
+
+    }
+savetoDb("apna college",()=>{
+    console.log("success : your data was saved.");
+    savetoDb("sarita", ()=>{
+        console.log("success2 : your data2 was saved.");
+        savetoDb("Harsh", ()=>{
+            console.log("success3 : data3 was saved");
+        },()=>{
+            console.log("failure3 : weak connection.");
+        })
+
+    },()=>{
+        console.log("failure2 : weak connection.");
+
+    })
+}, ()=>{
+    console.log("failure : weak connection.data not saved");
+})
+
+
+</script>
+</html>
