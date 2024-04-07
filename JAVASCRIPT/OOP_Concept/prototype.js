@@ -7,7 +7,10 @@ createUser.prototype.increment = function () {
 };
 
 createUser.prototype.printMe = function () {
-  console.log(`score is ${this.score}`);
+  console.log(`price is ${this.score}`);
 };
-const chai = createUser("chai", 25);
-const tea = createUser("tea", 250);
+const chai = new createUser("chai", 25);
+const tea = new createUser("tea", 250);
+
+chai.printMe();
+tea.printMe();
