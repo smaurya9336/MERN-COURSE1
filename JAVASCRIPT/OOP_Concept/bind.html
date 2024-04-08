@@ -15,7 +15,7 @@
             this.server="https://localhost:5500"
 
             //requirement
-            document.querySelector("button").addEventListener(("click",this.handleClick().bind(this)))
+            document.querySelector("button").addEventListener(("click",this.handleClick.bind(this)))
 
         }
         handleClick(){
@@ -27,6 +27,6 @@
 
     const app=new React()
 
-    
+
 </script>
 </html>
