@@ -1,0 +1,24 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.sky{
+	background-image: url(nightsky.jpg);
+	height: 100vh;
+	width: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow-x: hidden;
+}
+.hanumanji img{
+    width: 30%;
+    margin-top:10% ;
+    background-repeat: repeat-x;
+	animation:hanumanji 15s linear infinite;
+}
+@keyframes hanumanji{
+	100%{
+		transform: translateX(1550px);
+	}
+}
